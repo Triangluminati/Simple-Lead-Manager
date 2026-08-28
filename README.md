@@ -1,6 +1,6 @@
 # Simple Lead Manager
 
-The first step to get the backend running you need to create the file "/slebackend/slebackend/secrets/secret_key.txt" and add any secret key to it. For testing purposes you can set it to any word or even just a single character if you are trying to see how it works. But don't publish the backend anywhere without changing it to a complex secret key.
+The first step to get the backend running you need to create the file `/slebackend/slebackend/secrets/secret_key.txt` and add any secret key to it. For testing purposes you can set it to any word or even just a single character if you are trying to see how it works. But don't publish the backend anywhere without changing it to a complex secret key.
 
 Then in order to create your own local database you need to run the script below from Simple-Lead-Manager/slebackend
 ```
