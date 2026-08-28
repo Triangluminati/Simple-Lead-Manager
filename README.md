@@ -19,8 +19,9 @@ print(secret_key)
 
 from Simple-Lead-Manager/slefrontend , the frontend will run with
 ```
-npm run args
+npm run ARGS
 ```
+where ARGS will be replaced with something like `npm run dev` depending on what you are trying to do but you can just run `npm help` to get a full list of commands
 
 from Simple-Lead-Manager/slebackend , the backend will run with
 ```
