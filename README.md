@@ -16,3 +16,13 @@ import secrets
 secret_key = secrets.token_urlsafe(64)
 print(secret_key)
 ```
+
+from Simple-Lead-Manager/slefrontend , the frontend will run with
+```
+npm run args
+```
+
+from Simple-Lead-Manager/slebackend , the backend will run with
+```
+python manage.py runserver
+```
