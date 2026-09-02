@@ -1,10 +1,29 @@
 # Simple Lead Manager
 
-In order to get the backend running you need to create the file "/slebackend/slebackend/secrets/secret_key.txt" and add any secret key to it. For testing purposes you can set it to any word or even just a single character if you are trying to see how it works. But don't publish the backend anywhere without changing it to a complex secret key.
+The first step to get the backend running you need to create the file `/slebackend/slebackend/secrets/secret_key.txt` and add any secret key to it. For testing purposes you can set it to any word or even just a single character if you are trying to see how it works. But don't publish the backend anywhere without changing it to a complex secret key.
+
+Then in order to create your own local database you need to run the script below from Simple-Lead-Manager/slebackend
+```
+python manage.py slebackend makemigrations
+python manage.py migrate
+```
 
 You can run a simple python script to generate a secret key:
 
-```import secrets
+```python
+import secrets
 
 secret_key = secrets.token_urlsafe(64)
-print(secret_key)```
+print(secret_key)
+```
+
+from Simple-Lead-Manager/slefrontend , the frontend will run with
+```
+npm run ARGS
+```
+where ARGS will be replaced with something like `npm run dev` depending on what you are trying to do but you can just run `npm help` to get a full list of commands
+
+from Simple-Lead-Manager/slebackend , the backend will run with
+```
+python manage.py runserver
+```
